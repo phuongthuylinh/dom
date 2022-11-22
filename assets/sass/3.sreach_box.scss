@@ -1,0 +1,54 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.search-box{
+  position: relative;
+  background: #000;
+  border-radius: 20px;
+}
+
+.search-text{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  width: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.search-btn{
+  background: #fff;
+  outline: none;
+  border: none;
+  width: 75px;
+  height: 65px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.search-box:hover .search-text{
+  width: 400px;
+  padding: 10px 15px;
+}

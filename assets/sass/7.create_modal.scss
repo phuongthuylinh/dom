@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 50%,
+    rgb(255, 204, 112) 100%
+  );
+  overflow: hidden;
+}
+:root{
+    --red-color: #e26e70;
+    --white-color : #fff;
+}
+
+.open-modal-btn{
+    padding: 2rem 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+
+    &-inner{
+        width: 40rem;
+        position: relative;
+        top: 50%;
+        margin: 0 auto;
+        background:  var( --white-color);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        font-size: 17px;
+        background: var( --red-color);
+        color: var(--white-color);
+
+        & i{
+            cursor: pointer;
+        }
+    }
+
+    &-body{
+        padding: 1.5rem;
+        font-size: 17px;
+        h3{
+            color: var(--red-color);
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-footer{
+        padding: 1rem;
+        text-align: right;
+
+        & button{
+            background: var(--red-color);
+            padding: 6px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none; 
+            color: var(--white-color);
+            cursor: pointer;
+        }
+    }
+}
+
+.hide{
+    display: none;
+}

@@ -6,8 +6,6 @@
 }
 
 html {
-  font-size: 62.5%;
-  line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,11 +19,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   background: #8cc84c;
 }
 
-.container {
+.wrapper {
   width: 500px;
   background: #fff;
   border-radius: 10px;
@@ -33,56 +31,49 @@ body {
   font-size: 16px;
 }
 
-h2 {
+.title {
   font-size: 22px;
   font-weight: 600;
 }
 
 .content {
-  padding: 10px;
-  margin: 20px 0;
-  border-radius: 5px;
   border: 1px solid #888;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 5px;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  margin: 10px;
-}
-
-li {
-  margin: 4px 3px;
-  list-style: none;
+  margin-top: 20px;
   border-radius: 5px;
-  background: #8cc84c;
-  padding: 10px;
-  color: white;
 }
-li i {
+.content li {
+  background: #8cc84c;
+  color: #fff;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0 3px;
+  padding: 10px;
+}
+.content li i {
   font-size: 12px;
   margin-left: 5px;
 }
-
-.btn {
+.content input {
   border: none;
   outline: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px;
+}
+
+.remove-all {
   background: #8cc84c;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
   font-size: 16px;
+  margin-top: 20px;
 }
